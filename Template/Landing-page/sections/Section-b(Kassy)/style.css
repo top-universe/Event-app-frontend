@@ -1,0 +1,104 @@
+:root {
+    --primary-text-clr: #18181B;
+    --secondary-text-clr: #52525B;
+    --border-clr: #E4E4E7;
+}
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Services Section starts */
+.service {
+    text-align: center;
+    padding: 60px 8%;
+}
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    color: var(--primary-text-clr);
+    margin-bottom: 27px;
+}
+.sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--secondary-text-clr);
+    margin-bottom: 50px;
+}
+.box {
+    padding: 38px 35px 44px;
+    border-bottom: 1px solid var(--border-clr);
+}
+.box-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--primary-text-clr);
+    margin: 23px 0;
+}
+.box-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary-text-clr);
+}
+@media (min-width: 765px) {
+    .service {
+        /* padding: 120px 152px; */
+        padding: 120px 10%;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 48px;
+        margin-bottom: 27px;
+    }
+    .sub-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 95px;
+    }
+    .service-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        padding: 58px 30px 50px;
+        /* padding: 3.3% 3% 4%; */
+        flex-basis: 50%;
+    }
+    .support, .onboarding, .quality {
+        border-right: 1px solid var(--border-clr);
+    }
+    .quality, .result {
+        border-bottom: none;
+    }
+    .box-title {
+        font-weight: 700;
+        font-size: 21px;
+        margin: 45px 0 22px;
+    }
+}
+@media (min-width: 1023px) {
+    .box {
+        padding: 58px 55px 64px;
+        flex-basis: 33.3%;
+    }
+    .sales, .product {
+        border-right: 1px solid var(--border-clr);
+    }
+    .onboarding {
+        border-right: none;
+    }
+    .product {
+        border-bottom: none;
+    }
+}
+/* Services Section ends */

@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.nav-container {
+    display: flex;
+    margin: 19px 32px 80px;
+    /* flex-direction: row; */
+    justify-content: space-between;
+
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.nav-logo > span {
+    color: #F43F5E; 
+}
+
+.nav-section{
+    display: flex;
+    margin-left: 70px;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.nav-link-features {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18181B;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.nav-right > button {
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-customer {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-signup{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.section-one {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 102px;
+
+    /* display: flex; */
+    
+}
+
+.section-one-para {
+    font-size: 16px;
+    font-weight: 400;
+    color: #71717A;
+    
+}
+
+.section-one-header {
+    position: relative;
+    width: 627px;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 62px;
+    margin: 0 auto 36px;
+    z-index: 1;
+}
+
+.section-one-header > span {
+    position: absolute;
+    width: 228.24px;
+    height: 36.82px;
+    left: 330px;
+    top: 80px;
+    color: white;
+    background: linear-gradient(90deg, #44BCFF -0.55%, #44B0FF 22.86%, #FF44EC 48.36%, #FF44EC 73.33%, #FF675E 99.34%);
+    filter: blur(25px);
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.section-one-button {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-bottom: 34px;
+}
+
+.section-one-button button {
+    align-items: center;
+    padding: 16px;
+    width: 220px;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-one-button-one {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.section-one-button-two {
+    background: none;
+    border: 2px solid #A1A1AA;
+    color:  #18181B;
+}
+
+.play-icon.outline {
+    margin-right: 10px;
+
+}
+
+.section-one-mp4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/images/Group 11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 880px;
+    height: 526px;
+    margin: 102px auto;
+}
+
+.play-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 24px 154px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7px);
+    cursor: pointer;
+}

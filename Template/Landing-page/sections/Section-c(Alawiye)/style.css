@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* general element styling */
+a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  background: #2563eb;
+  border-radius: 9px;
+}
+
+.review-section {
+  padding: 106px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-section h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 62px;
+  padding-bottom: 23px;
+}
+
+.review-section p {
+  max-width: 710px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 87px;
+}
+
+.reviews {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* review component start here */
+
+.review {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 57px;
+}
+
+.review img {
+  width: 316px;
+  border-radius: 30px;
+  height: 568px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bottom-float {
+  position: absolute;
+  top: 6px;
+  width: 316px;
+  height: 568px;
+  display: flex;
+  left: 0;
+  background-image: linear-gradient(
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0)
+  );
+  color: #fff;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+
+.review:hover .bottom-float {
+  display: flex;
+}
+
+.bottom-float button {
+  border: 2px solid silver;
+  padding: 24px;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.09);
+  border: 2px solid #ffffff;
+  box-shadow: 0px 15px 75px rgba(27, 25, 68, 0.3);
+  backdrop-filter: blur(13px);
+  border-radius: 19px;
+}
+
+.bottom-float button img {
+  width: 11.44px;
+  height: 11.44px;
+}
+
+.cust-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.cust-post {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  color: #d4d4d8;
+}
+
+.more-review img {
+  padding-left: 14px;
+}
+
+/* ends --> review component styling */
+
+/* footer component */
+
+footer {
+  padding: 110px 0 40px;
+  display: flex;
+  background: #f8fafc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  content: "";
+  border: 1px solid #e2e8f0;
+  max-width: 1296px;
+  width: 100%;
+  height: 0;
+  margin-top: 86px;
+  margin-bottom: 40px;
+}
+
+.footer-desc {
+  display: flex;
+  gap: 148px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.footer-info .logo {
+  margin-bottom: 30px;
+}
+
+.footer-info p {
+  width: 294px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #71717a;
+}
+
+.other-links {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.pages h3,
+.email-subscribe h3 {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  padding-bottom: 30px;
+}
+
+.pages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 168px;
+}
+
+.other-links a {
+  color: rgb(0, 0, 0);
+}
+
+.other-links a:hover {
+  color: #2563eb;
+}
+
+.email-subscribe form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+  padding-left: 3px;
+}
+
+.email-subscribe form input {
+  width: 306px;
+  height: 55px;
+  background: #ffffff;
+  padding: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+}
+
+.email-subscribe form input::placeholder {
+  color: #a1a1aa;
+}
+
+.email-subscribe form button {
+  width: 306px;
+  height: 55px;
+}
+/* ends */
+
+.youther {
+  width: 880px;
+  height: 526px;
+  background: #ffffff;
+  box-shadow: 0px 24px 164px -20px rgba(35, 40, 105, 0.15);
+  border-radius: 10px;
+}
