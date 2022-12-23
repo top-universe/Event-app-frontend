@@ -233,7 +233,7 @@ body {
     color: var(--secondary-text-clr);
 }
 
-a {
+/* a {
     text-decoration: none;
     color: #2563eb;
     font-weight: 600;
@@ -252,7 +252,7 @@ a {
     font-size: 16px;
     background: #2563eb;
     border-radius: 9px;
-  }
+  } */
   
   .review-section {
     padding: 106px 50px;
