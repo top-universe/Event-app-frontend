@@ -1,5 +1,6 @@
 button {
   align-items: center;
+  border: none;
   height: 56px;
   padding: 16px;
   font-size: 18px;
