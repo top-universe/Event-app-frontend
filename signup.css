@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 .pic-side {
-  background: url(../assets/images/sign-bg.png);
+  background: url(./assets/images/sign-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -138,7 +138,7 @@ body {
     z-index: 9;
   }
   .pic-side {
-    background: url(../assets/images/sign-bg.png);
+    background: url(./assets/images/sign-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
