@@ -1,0 +1,1 @@
+{"version":3,"file":"interest.03763b87.js","sources":["../../../../pages/interest.vue"],"sourcesContent":["<template>\n    <div>\n        <h2>Interest page</h2>\n    </div>\n</template>\n\n<script>\n    export default {\n        \n    }\n</script>\n\n<style scoped>\n\n</style>"],"names":[],"mappings":";;;;;;;;;;;;;;AAOI,MAAK,YAAU,CAEf;;;;;;;;;;;"}

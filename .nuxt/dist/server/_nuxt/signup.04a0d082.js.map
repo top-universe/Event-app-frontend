@@ -1,0 +1,1 @@
+{"version":3,"file":"signup.04a0d082.js","sources":["../../../../pages/signup.vue"],"sourcesContent":["<template>\n    <section>\n        <h3>Signup</h3>\n    </section>\n</template>\n\n<script>\n    export default {\n        \n    }\n</script>\n\n<style scoped>\n\n</style>"],"names":[],"mappings":";;;;;;;;;;;;;;AAOI,MAAK,YAAU,CAEf;;;;;;;;;;;"}

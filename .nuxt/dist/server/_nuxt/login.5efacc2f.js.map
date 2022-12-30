@@ -1,0 +1,1 @@
+{"version":3,"file":"login.5efacc2f.js","sources":["../../../../pages/login.vue"],"sourcesContent":["<template>\n    <div>\n        <h3>Login page</h3>\n    </div>\n</template>\n\n<script>\n    export default {\n        \n    }\n\n</script>\n\n<style scoped>\n\n</style>"],"names":[],"mappings":";;;;;;;;;;;;;;AAOI,MAAK,YAAU,CAEf;;;;;;;;;;;"}

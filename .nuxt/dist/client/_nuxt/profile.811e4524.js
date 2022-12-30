@@ -1,0 +1,1 @@
+import{a as e,b as o,o as t,f as s}from"./entry.404aebd1.js";const a={},c=s("h2",null,"Profile page",-1),n=[c];function r(_,l,p,f,i,d){return t(),o("div",null,n)}const h=e(a,[["render",r]]);export{h as default};

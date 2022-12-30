@@ -43,7 +43,7 @@
         60 Days free trial . No credit card required
       </p>
       <div class="section-one-mp4">
-        <!-- <img src="assets\images\Group 11.png" alt="" class="mp4-frame"> -->
+        <!-- <img src="assets\images\Group11.png" alt="" class="mp4-frame"> -->
         <button class="play-button">
           <img
             src="../assets/icons/Icon.svg"
@@ -77,7 +77,7 @@
               <div class="cust-post">Founder of GearUp</div>
             </div>
             <button>
-              <img src="../assets/icons/button-play 1.svg" alt="pause" />
+              <img src="../assets/icons/button-play1.svg" alt="pause" />
             </button>
           </div>
         </li>
@@ -94,7 +94,7 @@
               <div class="cust-post">Co-Founder of Womenia</div>
             </div>
             <button>
-              <img src="../assets/icons/button-play 1.svg" alt="pause" />
+              <img src="../assets/icons/button-play1.svg" alt="pause" />
             </button>
           </div>
         </li>
@@ -110,7 +110,7 @@
               <div class="cust-post">Founder of CH Beauty</div>
             </div>
             <button>
-              <img src="../assets/icons/button-play 1.svg" alt="pause" />
+              <img src="../assets/icons/button-play1.svg" alt="pause" />
             </button>
           </div>
         </li>
@@ -347,7 +347,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./assets/images/Group 11.png");
+  background-image: url("./assets/images/Group11.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 880px;
