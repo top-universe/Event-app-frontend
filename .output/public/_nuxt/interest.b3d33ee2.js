@@ -1,1 +1,0 @@
-import{a as e,b as t,o as s,f as o}from"./entry.404aebd1.js";const n={},a=o("h2",null,"Interest page",-1),c=[a];function r(_,p,d,i,l,f){return s(),t("div",null,c)}const h=e(n,[["render",r]]);export{h as default};

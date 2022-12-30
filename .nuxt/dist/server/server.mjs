@@ -1,4 +1,4 @@
-var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
+var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l;
 import { getCurrentInstance, reactive, toRef, isRef, inject, defineComponent, computed, ref, h, resolveComponent, version, nextTick, shallowRef, unref, Transition, Suspense, provide, useSSRContext, withCtx, createVNode, defineAsyncComponent, onErrorCaptured, createApp } from "vue";
 import { $fetch } from "ofetch";
 import { useRuntimeConfig as useRuntimeConfig$1 } from "#internal/nitro";
@@ -415,6 +415,7 @@ const defuFn = createDefu((object, key, currentValue, _namespace) => {
 });
 const inlineConfig = {};
 defuFn(inlineConfig);
+const app = "";
 const components = {};
 const _nuxt_components_plugin_mjs_KR1HBZs4kY = defineNuxtPlugin((nuxtApp) => {
   for (const name in components) {
@@ -426,10 +427,10 @@ function createHead(initHeadObject) {
   const unhead = createHead$1();
   const legacyHead = {
     unhead,
-    install(app) {
+    install(app2) {
       if (version.startsWith("3")) {
-        app.config.globalProperties.$head = unhead;
-        app.provide("usehead", unhead);
+        app2.config.globalProperties.$head = unhead;
+        app2.provide("usehead", unhead);
       }
     },
     use(plugin) {
@@ -509,6 +510,7 @@ const node_modules_nuxt_dist_head_runtime_lib_vueuse_head_plugin_mjs_D7WGfuP1A0 
     };
   }
 });
+const __nuxt_page_meta$5 = {};
 const __nuxt_page_meta$4 = {};
 const __nuxt_page_meta$3 = {};
 const __nuxt_page_meta$2 = {};
@@ -516,54 +518,64 @@ const __nuxt_page_meta$1 = {};
 const __nuxt_page_meta = {};
 const _routes = [
   {
-    name: (_a = __nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.name) != null ? _a : "index",
-    path: (_b = __nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.path) != null ? _b : "/",
+    name: (_a = __nuxt_page_meta$5 == null ? void 0 : __nuxt_page_meta$5.name) != null ? _a : "index",
+    path: (_b = __nuxt_page_meta$5 == null ? void 0 : __nuxt_page_meta$5.path) != null ? _b : "/",
     file: "/Users/brain/Desktop/open source/evently/frontend/pages/index.vue",
+    children: [],
+    meta: __nuxt_page_meta$5,
+    alias: (__nuxt_page_meta$5 == null ? void 0 : __nuxt_page_meta$5.alias) || [],
+    redirect: (__nuxt_page_meta$5 == null ? void 0 : __nuxt_page_meta$5.redirect) || void 0,
+    component: () => import("./_nuxt/index.f9011819.js").then((m) => m.default || m)
+  },
+  {
+    name: (_c = __nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.name) != null ? _c : "interest",
+    path: (_d = __nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.path) != null ? _d : "/interest",
+    file: "/Users/brain/Desktop/open source/evently/frontend/pages/interest.vue",
     children: [],
     meta: __nuxt_page_meta$4,
     alias: (__nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.alias) || [],
     redirect: (__nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.redirect) || void 0,
-    component: () => import("./_nuxt/index.16728ddd.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/interest.8a3a49cf.js").then((m) => m.default || m)
   },
   {
-    name: (_c = __nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.name) != null ? _c : "interest",
-    path: (_d = __nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.path) != null ? _d : "/interest",
-    file: "/Users/brain/Desktop/open source/evently/frontend/pages/interest.vue",
+    name: (_e = __nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.name) != null ? _e : "landing",
+    path: (_f = __nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.path) != null ? _f : "/landing",
+    file: "/Users/brain/Desktop/open source/evently/frontend/pages/landing.vue",
     children: [],
     meta: __nuxt_page_meta$3,
     alias: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.alias) || [],
     redirect: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.redirect) || void 0,
-    component: () => import("./_nuxt/interest.03763b87.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/landing.32d5bb26.js").then((m) => m.default || m)
   },
   {
-    name: (_e = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.name) != null ? _e : "login",
-    path: (_f = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.path) != null ? _f : "/login",
+    name: (_g = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.name) != null ? _g : "login",
+    path: (_h = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.path) != null ? _h : "/login",
     file: "/Users/brain/Desktop/open source/evently/frontend/pages/login.vue",
     children: [],
     meta: __nuxt_page_meta$2,
     alias: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.alias) || [],
     redirect: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.redirect) || void 0,
-    component: () => import("./_nuxt/login.5efacc2f.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/login.91185afe.js").then((m) => m.default || m)
   },
   {
-    name: (_g = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) != null ? _g : "profile",
-    path: (_h = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.path) != null ? _h : "/profile",
+    name: (_i = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) != null ? _i : "profile",
+    path: (_j = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.path) != null ? _j : "/profile",
     file: "/Users/brain/Desktop/open source/evently/frontend/pages/profile.vue",
     children: [],
     meta: __nuxt_page_meta$1,
     alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
     redirect: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect) || void 0,
-    component: () => import("./_nuxt/profile.b31dc62e.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/profile.a9b8430c.js").then((m) => m.default || m)
   },
   {
-    name: (_i = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) != null ? _i : "signup",
-    path: (_j = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) != null ? _j : "/signup",
+    name: (_k = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) != null ? _k : "signup",
+    path: (_l = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) != null ? _l : "/signup",
     file: "/Users/brain/Desktop/open source/evently/frontend/pages/signup.vue",
     children: [],
     meta: __nuxt_page_meta,
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import("./_nuxt/signup.04a0d082.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/signup.a8a73242.js").then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -957,7 +969,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import("./_nuxt/error-component.0e41ff73.js").then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import("./_nuxt/error-component.75b9a49c.js").then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());

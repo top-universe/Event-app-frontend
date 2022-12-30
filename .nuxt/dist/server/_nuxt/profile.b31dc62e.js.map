@@ -1,1 +1,0 @@
-{"version":3,"file":"profile.b31dc62e.js","sources":["../../../../pages/profile.vue"],"sourcesContent":["<template>\n    <div>\n        <h2>Profile page</h2>\n    </div>\n</template>\n\n<script>\n    export default {\n        \n    }\n</script>\n\n<style scoped>\n\n</style>"],"names":[],"mappings":";;;;;;;;;;;;;;AAOI,MAAK,YAAU,CAEf;;;;;;;;;;;"}
