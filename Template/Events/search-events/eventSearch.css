@@ -1,0 +1,31 @@
+@import url("../assets/Variables.css");
+@import url("../assets/button.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  align-items: center;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: row;
+  max-width: 1030px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
