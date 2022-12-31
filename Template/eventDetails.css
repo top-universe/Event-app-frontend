@@ -1,0 +1,365 @@
+@import url("../assets/Variables.css");
+@import url("../assets/button.css");
+
+:root {
+  --black-clr: #000000;
+  --white-clr: #ffffff;
+  --text-2-color: #151515;
+  --text-3-color: #191d23;
+  --text-4-color: #535353;
+  --border-2-color: #d0d5dd;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+/* Utilities */
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.ms-10 {
+  margin-left: 10px;
+}
+
+/* main */
+/* Hero section starts */
+.details-box {
+  padding: 76px 5%;
+}
+
+.image-section {
+  background: url(./assets/images/bg-details.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  height: 306px;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.content {
+  text-align: center;
+  color: var(--white-clr);
+  position: relative;
+  z-index: 1;
+}
+.content-title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+.content-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Event Location */
+.gallery {
+  flex-basis: 55%;
+}
+.text-section {
+  margin-top: 47px;
+}
+
+.gallery-img > h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-2-color);
+  margin-bottom: 25px;
+}
+.gallery-img-box {
+  gap: 24px;
+}
+.para {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--text-2-color);
+}
+.gallery-details .italics {
+  font-style: italic;
+}
+.gallery .follow {
+  padding: 3px 15px;
+  width: 67px;
+  height: 23px;
+  background: var(--white-clr);
+  border: 0.4px solid #000000;
+  border-radius: 100px;
+}
+.gallery-details {
+  gap: 30px;
+  margin-top: 58px;
+}
+.gallery-follow {
+  gap: 10px;
+}
+
+/* Gallery Location */
+.gallery-location {
+  margin-top: 53px;
+  color: var(--text-2-color);
+}
+.gallery-location > h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+.gallery-location img {
+  align-self: flex-start;
+  margin-right: 13px;
+}
+.gallery-location .location-heading {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.gallery-location p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+.date-location {
+  margin-top: 20px;
+}
+
+/* Form */
+.form-box {
+  flex-basis: 35%;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-header h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-2-color);
+  margin-bottom: 19px;
+}
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-3-color);
+  margin-bottom: 5px;
+}
+.form-box .input-style {
+  height: 40px;
+  border: 1px solid var(--border-2-color);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #64748b;
+  width: 100%;
+  padding-left: 8px;
+  margin: 5px 0 19px;
+}
+.input-time {
+  width: 47% !important;
+}
+.cta-btn {
+  height: 44px;
+  background: var(--text-2-color);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-clr);
+  width: 100%;
+  cursor: pointer;
+  padding: 12.5px 0;
+}
+/* map */
+.map {
+  margin-top: 50px;
+}
+.direction {
+  margin: 52.4px 0;
+}
+.direction > h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-2-color);
+  margin-right: 26px;
+}
+.map-way img {
+  margin-right: 30px;
+}
+
+/* About */
+.about {
+  color: var(--black-clr);
+}
+.about-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px; 
+  margin-bottom: 30px;
+}
+.about-content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* Download */
+.download {
+  margin: 50px 0;
+}
+.download a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--text-4-color);
+  height: 27px;
+  background: #f5f5f5;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 5px 10px;
+  gap: 5px;
+}
+.download a:first-child {
+  margin-right: 10px;
+}
+.host-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-2-color);
+  margin-bottom: 10px;
+}
+.host-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--text-4-color);
+  margin-bottom: 16px;
+}
+.hosts-box {
+  padding: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.hosts h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--text-4-color);
+}
+.hosts a {
+  padding: 3px 5px;
+  height: 18px;
+  background: rgba(148, 255, 148, 0.1);
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #5eb35e;
+}
+.more {
+  margin: 16px 0;
+}
+.more p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(83, 83, 83, 0.5);
+}
+.social > h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black-clr);
+  margin-bottom: 20px;
+}
+.socials img {
+  margin-right: 24px;
+}
+
+@media (max-width: 560px) {
+  .details-box {
+    padding: 25px 0;
+  }
+  .text-section {
+    padding: 0 25px;
+  }
+  .image-section {
+    background: url(./assets/images/sign-bg.png);
+    border-radius: 0px;
+    height: 361px;
+  }
+  .content-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  .content-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .text-section {
+    margin-top: 26px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .gallery-follow {
+    width: 100%;
+  }
+  .gallery-img > h3 {
+    margin-bottom: 23px;
+  }
+  .gallery-img-box {
+    gap: 17px;
+  }
+  .gallery-img-box img {
+    width: 52.15px;
+    height: 52.15px;
+  }
+  .gallery-img-box .img-box {
+    padding: 3.6px;
+  }
+  .gallery-details {
+    gap: 23px;
+    margin-top: 23.6px;
+  }
+  .form-box {
+    flex-basis: 100%;
+    padding: 0px;
+    border: none;
+  }
+}

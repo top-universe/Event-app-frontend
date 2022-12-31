@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./eventDetails.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+
+    <!-- Event details -->
+    <main class="details-box">
+
+      <!-- Hero section -->
+      <section class="image-section flex align-items-center justify-center">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1 class="content-title">Daily Grand Sprint</h1>
+          <p class="content-subtitle">
+            Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
+            vel libero
+          </p>
+        </div>
+      </section>
+
+      <!-- Text section -->
+      <section class="text-section">
+
+        <!-- Event Location -->
+        <div class="gallery-form flex justify-space-between align-items-center wrap">
+          <div class="gallery">
+            <div class="gallery-img">
+              <h3>Event Details</h3>
+              <div class="gallery-img-box flex">
+                <div class="img-box">
+                  <img src="./assets/images/pool.png" alt="Pool" />
+                </div>
+                <div class="img-box">
+                  <img
+                    src="./assets/images/cocktail.png"
+                    alt="cocktail Party"
+                  />
+                </div>
+                <div class="img-box">
+                  <img src="./assets/images/pine.png" alt="Beach Party" />
+                </div>
+                <div class="img-box">
+                  <img src="./assets/images/wine.png" alt="Party" />
+                </div>
+                <div class="img-box">
+                  <img src="./assets/images/outing.png" alt="Outing" />
+                </div>
+              </div>
+            </div>
+            <div class="gallery-details flex align-items-center wrap">
+              <p class="italics para">By Amaka</p>
+              <div class="rate">
+                <p class="para">
+                  <img src="./assets/icons/star.svg" alt="Rating" /> 4.25
+                  reviews
+                </p>
+              </div>
+              <div class="gallery-follow flex align-items-center">
+                <p class="para">1.4k followers</p>
+                <button class="follow para">Follow</button>
+              </div>
+            </div>
+            <div class="gallery-location">
+              <h3>When and where</h3>
+              <div class="date-location flex justify-space-between wrap">
+                <div class="date flex mb-20">
+                  <img src="./assets/icons/calendar.svg" alt="calendar" />
+                  <div class="location-content">
+                    <h4 class="location-heading">Date, Time & Duration</h4>
+                    <p>Wed, Feb 15, 2023, 9:00 AM WAT, 7hrs</p>
+                  </div>
+                </div>
+                <div class="location flex mb-20">
+                  <img src="./assets/icons/location.svg" alt="Location" />
+                  <div class="location-content">
+                    <h4 class="location-heading">Location</h4>
+                    <p>
+                      Landmark centre water corporation <br />
+                      Drive #2 &4 Annex m La !06104
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-box">
+            <form action="">
+              <div class="form-header">
+                <h3>Register for event</h3>
+              </div>
+              <div class="form-control">
+                <label for="" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="input-style"
+                  placeholder="Name of event"
+                />
+              </div>
+              <div class="form-control">
+                <label for="" class="form-label">Date</label>
+                <input
+                  type="date"
+                  name=""
+                  id=""
+                  class="input-style"
+                  placeholder="Enter a date"
+                />
+              </div>
+              <div class="form-control flex justify-space-between">
+                <input
+                  type="time"
+                  name=""
+                  id=""
+                  class="input-style input-time"
+                />
+                <input
+                  type="time"
+                  name=""
+                  id=""
+                  class="input-style input-time"
+                />
+              </div>
+              <div class="button-box">
+                <button class="cta-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Event Map -->
+        <div class="map">
+          <picture>
+            <source
+              media="(max-width:799px)"
+              srcset="./assets/images/map-mobile.png"
+            />
+            <source
+              media="(min-width:800px)"
+              srcset="./assets/images/map.png"
+            />
+            <img src="./assets/images/map-mobile.png" alt="" />
+          </picture>
+
+          <div class="direction flex align-items-center">
+            <h4>How to get there?</h4>
+            <div class="map-way">
+              <img src="./assets/icons/car.svg" alt="Car Icon" />
+              <img src="./assets/icons/foot.svg" alt="man Icon" />
+              <img src="./assets/icons/bicycle.svg" alt="Bicycle Icon" />
+            </div>
+          </div>
+        </div>
+
+        <!-- About the Event -->
+        <div class="about">
+          <h2 class="about-title">About this event</h2>
+          <p class="about-content">
+            Lorem ipsum dolor sit amet consectetur. Tortor scelerisque non
+            mauris quis viverra tortor donec in nascetur. Duis amet ac
+            vestibulum neque eget a porttitor sollicitudin. Id sodales iaculis
+            mauris est. Amet aliquet at non purus mauris feugiat. Sed proin id
+            urna amet velit massa parturient. In vitae nibh lacus congue
+            pretium. Placerat tristique malesuada faucibus egestas quisque sit
+            enim id nulla. Amet in cursus quis auctor dolor vulputate fringilla
+            facilisis dictum. Phasellus elementum diam quisque blandit. <br />
+            <br />
+            Sapien sed amet condimentum at. Nulla nibh egestas adipiscing
+            ultricies viverra dignissim sit. Ultrices diam sed convallis gravida
+            egestas enim vitae id velit. Quisque bibendum eget malesuada
+            vulputate pulvinar tincidunt felis mauris neque. Faucibus amet
+            tristique malesuada cum nulla tempor malesuada a. Viverra risus in
+            euismod tempor convallis sollicitudin malesuada enim nibh. Proin
+            suscipit risus malesuada pretium id arcu. Massa id consectetur
+            fermentum nam sapien. Quis tortor feugiat magna urna in tristique
+            hac facilisis viverra. Commodo turpis adipiscing elit nunc lacus.
+            Congue scelerisque sem purus venenatis suspendisse.
+          </p>
+        </div>
+
+        <!-- Download Event -->
+        <div class="download flex">
+          <a href="#" class="flex">
+            <p>Download card</p>
+            <img src="./assets/icons/Download-icon.svg" alt="Download Icon" />
+          </a>
+          <a href="#" class="flex">
+            <p>Share event</p>
+            <img src="./assets/icons/Share.svg" alt="Share Icon" />
+          </a>
+        </div>
+
+        <!-- Event Host/guest -->
+        <div class="contact">
+          <div class="host">
+            <h3 class="host-title">Hosts & Managers</h3>
+            <p class="host-subtitle">
+              Add hosts, special guests, and event managers.
+            </p>
+          </div>
+          <div class="hosts flex">
+            <div class="hosts-box flex">
+              <img src="./assets/images/creator.png" alt="Event Creator" />
+              <div class="creator ms-10">
+                <h4>Nwamaka Nwosu</h4>
+                <a href="#">Creator</a>
+              </div>
+            </div>
+            <div class="hosts-box flex ms-10">
+              <img src="./assets/images/guest.png" alt="Event Guest" />
+              <div class="guest ms-10">
+                <h4>Marvelous Akporo...</h4>
+                <a href="#">Guest</a>
+              </div>
+            </div>
+          </div>
+          <div class="more flex">
+            <p>Learn more about adding hosts / managers</p>
+            <a href="#" class="ms-10"
+              ><img src="./assets/icons/Share-link.svg" alt="Share Link"
+            /></a>
+          </div>
+          <div class="social">
+            <h4>Share with Friends</h4>
+            <div class="socials flex">
+              <img src="./assets/icons/twitter.svg" alt="Twitter Icon" />
+              <img src="./assets/icons/facebook.svg" alt="Facebook Icon" />
+              <img src="./assets/icons/linkedin.svg" alt="Linkedin Icon" />
+              <img src="./assets/icons/dribbble.svg" alt="Dribbble Icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
