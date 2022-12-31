@@ -1,0 +1,28 @@
+button {
+  align-items: center;
+  border: none;
+  height: 56px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #000000;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #2b2b2b;
+}
+
+.outline-btn {
+  border: 2px solid #a1a1aa;
+  color: #18181b;
+}
+
+.outline-btn:hover {
+  color: #2b2b2b;
+}

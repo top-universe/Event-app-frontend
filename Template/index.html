@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Pages</title>
+  </head>
+  <body>
+    <div>
+      <a
+        target="_blank"
+        href="https://www.figma.com/file/tkGj15F3w8BkMu76BV951C/Evently?t=n3dYqbtRWEqaPfoj-6"
+      >
+        <strong>Figma Link</strong>
+      </a>
+    </div>
+
+    <div class="grid">
+      <a href="landing.html">
+        <div>
+          <p>Landing</p>
+        </div>
+      </a>
+
+      <a href="login.html">
+        <div>
+          <p>Login</p>
+        </div>
+      </a>
+
+      <a href="profile.html">
+        <div>
+          <p>Profile</p>
+        </div>
+      </a>
+      <a href="signup.html">
+        <div>
+          <p>Signup</p>
+        </div>
+      </a>
+      <a href="selectInterest.html">
+        <div>
+          <p>Select Interest</p>
+        </div>
+      </a>
+    </div>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif !important;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .grid > a {
+        all: unset;
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        flex-basis: 300px;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </body>
+</html>
