@@ -33,19 +33,19 @@
   text-align: center;
 }
 
-body {
+main {
   width: 100vw;
   padding: 0 100px;
 }
 
 @media (max-width: 750px) {
-  body {
+  main {
     padding: 0 50px;
   }
 }
 
 @media (max-width: 500px) {
-  body {
+  main {
     padding: 0 20px;
   }
 }
