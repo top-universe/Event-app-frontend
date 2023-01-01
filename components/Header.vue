@@ -23,6 +23,46 @@
       </ul>
     </nav>
   </header>
+
+  <header v-if="!user.username">
+    <div class="logo">
+      <img src="@/assets/images/logo.svg" alt="logo" />
+      <h1>Evently</h1>
+    </div>
+    <nav>
+      <img
+        src="/assets/icons/Vectormenu.svg"
+        alt="menu-icon"
+        class="menu-icon"
+      />
+      <ul class="nav-links">
+        <NuxtLink to="login">
+          <button class="btn-customer outline-btn">Customer Login</button>
+        </NuxtLink>
+        <NuxtLink to="signup">
+          <button class="btn-signup primary-btn">Sign up</button>
+        </NuxtLink>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <nav class="nav-container" v-if="!user.username">
+    <div class="nav-left">
+      <div class="logo">
+        <img src="@/assets/images/logo.svg" alt="logo" />
+        <h1>Evently</h1>
+      </div>
+      <div class="nav-section">
+        <a href="" class="nav-link-features">Features</a>
+        <a href="" class="nav-link-features">Pricing</a>
+        <a href="" class="nav-link-features">Automation</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <button class="btn-customer outline-btn">Customer Login</button>
+      <button class="btn-signup primary-btn">Sign up</button>
+    </div>
+  </nav> -->
 </template>
 
 <script>
@@ -30,7 +70,7 @@ export default {
   data() {
     return {
       user: {
-        username: "solomonmarvel97",
+        username: "",
         email: "solomonmarvel@hotmail.com",
         firstName: "Marvelous",
         lastName: "Akporowho",
@@ -41,6 +81,68 @@ export default {
 </script>
 
 <style scoped>
+.nav-container {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.nav-logo > span {
+  color: #f43f5e;
+}
+
+.nav-section {
+  display: flex;
+  margin-left: 70px;
+  width: 330px;
+  justify-content: space-between;
+}
+
+.nav-link-features {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--fontsize-content);
+  line-height: 24px;
+  color: var(--primary-text-clr);
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav-right > button {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--fontsize-content);
+}
+
+.btn-customer {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-signup {
+  background: #000000;
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-text-clr);
