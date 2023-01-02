@@ -42,7 +42,7 @@
         <h2>Based on you interest</h2>
         <ul class="event-cards">
           <li class="card-container" v-for="(i,index) in 10" :key="index">
-            <img src="https://source.unsplash.com/random" alt="event-image" />
+            <img :src="generateImage" alt="event-image" />
             <h3>Daily Grand Sprint</h3>
             <p class="event-description">
               Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
@@ -98,7 +98,7 @@
         <h2>Best recommendation</h2>
         <ul class="event-cards">
           <li class="card-container" v-for="(i,index) in 5" :key="index">
-            <img src="https://source.unsplash.com/random" alt="event-image" />
+            <img :src="generateImage" alt="event-image" />
             <h3>Daily Grand Sprint</h3>
             <p class="event-description">
               Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
@@ -136,6 +136,14 @@
     <Footer />
   </main>
 </template>
+
+
+<script setup>
+
+const generateImage = computed(() => {
+  return "https://source.unsplash.com/random"
+})
+</script>
 
 <style scoped>
 /* utilities */
