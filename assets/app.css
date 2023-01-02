@@ -24,3 +24,9 @@
   text-align: center;
   color: var(--primary-text-clr);
 }
+
+
+.center {
+  display:  grid;
+  place-items: center;
+}

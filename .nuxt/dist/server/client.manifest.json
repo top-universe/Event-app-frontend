@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "C:/Users/TOSHIBA/desktop/project/top-universe/e-ticketing/event-app-frontend/node_modules/nuxt/dist/app/entry.mjs": {
+  "/Users/brain/Desktop/open source/evently/frontend/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "C:/Users/TOSHIBA/desktop/project/top-universe/e-ticketing/event-app-frontend/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "/Users/brain/Desktop/open source/evently/frontend/node_modules/nuxt/dist/app/entry.mjs"
   }
 }
