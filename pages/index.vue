@@ -45,6 +45,12 @@
           <p>View Events</p>
         </div>
       </NuxtLink>
+
+      <NuxtLink to="search-events">
+        <div>
+          <p>Search Events</p>
+        </div>
+      </NuxtLink>
     </div>
   </main>
 </template>

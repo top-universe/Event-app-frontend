@@ -17,7 +17,7 @@
         <a href="#"> <li class="link">Resources</li> </a>
         <a href="#">
           <li>
-            <img src="@/assets/images/Ellipse 1.png" alt="" />
+            <img src="../assets/images/Ellipse_1.png" alt="" />
           </li>
         </a>
       </ul>

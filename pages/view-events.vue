@@ -37,31 +37,49 @@
         <li class="tags dt-none">More</li>
       </ul>
 
-      <!-- based on interest -->
-      <div class="event-by">
-        <h2>Based on you interest</h2>
-        <ul class="event-cards">
-          <li class="card-container" v-for="(i,index) in 10" :key="index">
-            <img :src="generateImage" alt="event-image" />
-            <h3>Daily Grand Sprint</h3>
-            <p class="event-description">
-              Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
-              vel libero
-            </p>
-            <div class="details">
-              <div class="date">14th Dec, 2022</div>
-              <div class="tag">Sports</div>
-            </div>
+      <!-- Category-mobile -->
+      <div class="event-by dt-none">
+        <h2>Categories</h2>
+        <ul class="event-cards category">
+          <li class="category-card">
+            <img src="@/assets/images/sport.png" alt="sport" />
+            <h3 class="category-title">Sport</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fitness.png" alt="sport" />
+            <h3 class="category-title">fitness</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/music.png" alt="sport" />
+            <h3 class="category-title">Music</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fashion.png" alt="sport" />
+            <h3 class="category-title">Fashion</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/technology.png" alt="sport" />
+            <h3 class="category-title">Technology</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/arts.png" alt="sport" />
+            <h3 class="category-title">Arts</h3>
           </li>
         </ul>
       </div>
 
-      <!-- Category -->
+      <!-- based on interest -->
       <div class="event-by">
-        <div class="center">
-          <h2>Categories</h2>
-        </div>
-        <ul class="categories">
+        <h2>Based on you interest</h2>
+        <ul class="event-cards">
+          <CardResult/>
+        </ul>
+      </div>
+
+      <!-- Category -->
+      <div class="event-by mb-none">
+        <h2>Categories</h2>
+        <ul class="event-cards category">
           <li class="category-card">
             <img src="@/assets/images/sport.png" alt="sport" />
             <h3 class="category-title">Sport</h3>
@@ -97,18 +115,7 @@
       <div class="event-by mb-none">
         <h2>Best recommendation</h2>
         <ul class="event-cards">
-          <li class="card-container" v-for="(i,index) in 5" :key="index">
-            <img :src="generateImage" alt="event-image" />
-            <h3>Daily Grand Sprint</h3>
-            <p class="event-description">
-              Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
-              vel libero
-            </p>
-            <div class="details">
-              <div class="date">14th Dec, 2022</div>
-              <div class="tag">Sports</div>
-            </div>
-          </li>
+          <CardResult/>
         </ul>
       </div>
 
@@ -138,11 +145,8 @@
 </template>
 
 
-<script setup>
+<script>
 
-const generateImage = computed(() => {
-  return "https://source.unsplash.com/random"
-})
 </script>
 
 <style scoped>
@@ -231,6 +235,10 @@ a:hover {
   border-radius: 200px;
 }
 
+.search-event:focus {
+  outline: none;
+}
+
 .search-event input {
   border: none;
   background-color: transparent;
@@ -315,21 +323,21 @@ ul.event-tag-list {
 
 .event-cards {
   width: 100%;
-  gap: 50px;
-  display: grid;
+  gap: 40px;
+  display: flex;
   list-style-type: none;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-container {
-  width: 100%;
+  width: 229px;
 }
 
 .card-container img {
   width: 100%;
-  height: 120px;
+  height: 116px;
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
@@ -385,17 +393,11 @@ ul.event-tag-list {
   color: #151515;
 }
 
-.categories {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  list-style: none;
+.category {
+  gap: 22px;
 }
 
 .category-card {
-  flex-basis: 150px;
   position: relative;
 }
 
@@ -561,12 +563,7 @@ ul.event-tag-list {
   }
 }
 
-@media (max-width: 1000px) {
-  .category-card {
-    display: flex;
-    flex-basis: 100px
-  }
-
+@media (max-width: 600px) {
   .card-container {
     width: 100%;
   }
