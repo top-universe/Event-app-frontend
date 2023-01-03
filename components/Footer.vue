@@ -3,7 +3,7 @@
     <div class="company-and-links">
       <div class="company-details">
         <div class="logo">
-          <img src="/assets/images/logo.svg" alt="logo" />
+          <img src="../assets/icons/logo.svg" alt="logo" />
           <h1>Evently</h1>
         </div>
         <div class="description">
@@ -85,19 +85,19 @@
     </div>
 
     <div class="foot">
-      <div class="copyright">© 2077 Untitled UI. All rights reserved.</div>
+      <div class="copyright">© 2023 Untitled UI. All rights reserved.</div>
       <div class="social-icons">
         <a href="#twitter"
-          ><img src="/assets/icons/Vectortwitter.svg" alt=""
+          ><img src="../assets/icons/Vectortwitter.svg" alt=""
         /></a>
         <a href="#linkedin"
-          ><img src="/assets/icons/Vectorlinkedin.svg" alt=""
+          ><img src="../assets/icons/Vectorlinkedin.svg" alt=""
         /></a>
         <a href="#facebook"
-          ><img src="/assets/icons/Vectorfacebook.png" alt=""
+          ><img src="../assets/icons/Vectorfacebook.png" alt=""
         /></a>
         <a href="#webpage"
-          ><img src="/assets/icons/Vectorwebpage.svg" alt=""
+          ><img src="../assets/icons/Vectorwebpage.svg" alt=""
         /></a>
       </div>
     </div>
@@ -120,25 +120,26 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 200px 0 47.5px;
   gap: 86px;
+  padding: 200px 135px 47.5px;
+
 }
 
 .company-and-links {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
   gap: 64px;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  
 }
 
 .company-details {
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+}
+
+.logo {
+  margin-bottom: 32px;
 }
 
 .description {
@@ -168,7 +169,6 @@ footer {
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  width: 130px;
 }
 
 .link-group h3 {
@@ -224,10 +224,13 @@ footer {
 }
 
 @media (max-width: 750px) {
-  footer {
-    padding: 0 6px;
-  }
 
+  footer {
+    padding: 50px 20px;
+  }
+  .company-and-links {
+    flex-direction: column;
+  }
   .foot {
     flex-direction: column;
     align-items: flex-start;
