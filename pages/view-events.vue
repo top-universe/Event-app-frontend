@@ -1,13 +1,155 @@
-@import url("/assets/Variables.css");
-@import url("/assets/button.css");
+<template>
+  <main>
+    <!-- header component -->
+    <Header />
+    <!-- header ends -->
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter";
-}
+    <!-- CTA > Call To Action -->
+    <div class="hero">
+      <h1>Turn your visitors into profitable business</h1>
+      <div class="search-event">
+        <input type="text" name="search" placeholder="Search Events" />
+        <button>
+          <img src="@/assets/images/magnifyingglass.svg" alt="" />
+        </button>
+      </div>
+    </div>
 
+    <!-- Events -->
+    <div class="events">
+      <div class="filter-by-location">
+        Popular in <span class="location">Lagos</span>
+        <span>
+          <img src="@/assets/images/dropdown-arrow.svg" alt="select" />
+        </span>
+      </div>
+
+      <ul class="event-tag-list">
+        <li class="tags present">All</li>
+        <li class="tags">For you</li>
+        <li class="tags">Online</li>
+        <li class="tags">Today</li>
+        <li class="tags mb-none">This weekend</li>
+        <li class="tags mb-none">Free</li>
+        <li class="tags mb-none">Music</li>
+        <li class="tags mb-none">Food & Drink</li>
+        <li class="tags mb-none">Charity & Causes</li>
+        <li class="tags dt-none">More</li>
+      </ul>
+
+      <!-- Category-mobile -->
+      <div class="event-by dt-none">
+        <h2>Categories</h2>
+        <ul class="event-cards category">
+          <li class="category-card">
+            <img src="@/assets/images/sport.png" alt="sport" />
+            <h3 class="category-title">Sport</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fitness.png" alt="sport" />
+            <h3 class="category-title">fitness</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/music.png" alt="sport" />
+            <h3 class="category-title">Music</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fashion.png" alt="sport" />
+            <h3 class="category-title">Fashion</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/technology.png" alt="sport" />
+            <h3 class="category-title">Technology</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/arts.png" alt="sport" />
+            <h3 class="category-title">Arts</h3>
+          </li>
+        </ul>
+      </div>
+
+      <!-- based on interest -->
+      <div class="event-by">
+        <h2>Based on you interest</h2>
+        <ul class="event-cards">
+          <CardResult/>
+        </ul>
+      </div>
+
+      <!-- Category -->
+      <div class="event-by mb-none">
+        <h2>Categories</h2>
+        <ul class="event-cards category">
+          <li class="category-card">
+            <img src="@/assets/images/sport.png" alt="sport" />
+            <h3 class="category-title">Sport</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fitness.png" alt="sport" />
+            <h3 class="category-title">fitness</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/music.png" alt="sport" />
+            <h3 class="category-title">Music</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/fashion.png" alt="sport" />
+            <h3 class="category-title">Fashion</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/technology.png" alt="sport" />
+            <h3 class="category-title">Technology</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/arts.png" alt="sport" />
+            <h3 class="category-title">Arts</h3>
+          </li>
+          <li class="category-card">
+            <img src="@/assets/images/food.png" alt="sport" />
+            <h3 class="category-title">Food</h3>
+          </li>
+        </ul>
+      </div>
+
+      <!-- recommendation -->
+      <div class="event-by mb-none">
+        <h2>Best recommendation</h2>
+        <ul class="event-cards">
+          <CardResult/>
+        </ul>
+      </div>
+
+      <div class="promote mb-none">
+        <div class="product-advert">
+          <div class="advert-text">
+            <h2 class="advert-title">
+              Turn your visitors into profitable business events
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
+              vel libero
+            </p>
+          </div>
+        </div>
+        <div class="get-action">
+          <h2>Tell us what you love to see</h2>
+          <p>We’ll find event recommendations just for you</p>
+          <button class="outline-btn outline-white">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <Footer />
+  </main>
+</template>
+
+
+<script>
+
+</script>
+
+<style scoped>
 /* utilities */
 .big-text {
   font-size: 50px;
@@ -59,73 +201,6 @@ a:hover {
   color: var(--purple-color);
 }
 
-/* header styling */
-
-header {
-  width: 100%;
-  display: flex;
-  padding: 32px 0;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-ul.nav-links {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-li.links {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--primary-text-clr);
-}
-
-li.link:not(:first-child) {
-  margin-left: 10px;
-}
-
-li.nav-links img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.link.present {
-  color: var(--purple-color);
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media (max-width: 820px) {
-  ul.nav-links {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 650px) {
-  ul.nav-links {
-    display: none;
-  }
-
-  .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 22.5px;
-  }
-}
-/* ends of header styling */
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -158,6 +233,10 @@ li.nav-links img {
   height: 55px;
   background: #f6f6f6;
   border-radius: 200px;
+}
+
+.search-event:focus {
+  outline: none;
 }
 
 .search-event input {
@@ -362,7 +441,7 @@ ul.event-tag-list {
 .product-advert {
   flex: 1;
   height: 322px;
-  background-image: url("/assets/images/sign-bg.png");
+  background-image: url("@/assets/images/sign-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -370,7 +449,7 @@ ul.event-tag-list {
 }
 
 .advert-text {
-  background-image: url("/assets/images/Noise-Animation.png");
+  background-image: url("@/assets/images/Noise-Animation.png");
   width: 100%;
   height: 100%;
   display: flex;
@@ -435,126 +514,9 @@ ul.event-tag-list {
   border-radius: 4px;
 }
 
-/* footer styling */
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 200px 0 47.5px;
-  gap: 86px;
-}
-
-.company-and-links {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 64px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.company-details {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #151515;
-}
-
 .dt-none {
   display: none;
 }
-
-.web-links {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 616px;
-  width: 100%;
-  gap: 40px;
-  justify-content: space-between;
-}
-
-.link-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-  width: 130px;
-}
-
-.link-group h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: #151515;
-}
-
-.link-list {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  flex-direction: column;
-  list-style-type: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #151515;
-}
-
-.foot {
-  display: flex;
-  gap: 32px;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.copyright {
-  flex: 1;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #98a2b3;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-}
-
-.social-icons a img {
-  width: 24px;
-  height: 24px;
-}
-
-@media (max-width: 750px) {
-  footer {
-    padding: 0 6px;
-  }
-
-  .foot {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* footer end */
 
 /* media query start */
 @media (max-width: 750px) {
@@ -629,3 +591,4 @@ footer {
     color: var(--white-color);
   }
 }
+</style>
