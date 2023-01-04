@@ -573,7 +573,7 @@ export default {};
     padding: 0 25px;
   }
   .image-section {
-    background: url(./assets/images/sign-bg.png);
+    background: url(../assets/images/sign-bg.png);
     border-radius: 0px;
     height: 361px;
   }
