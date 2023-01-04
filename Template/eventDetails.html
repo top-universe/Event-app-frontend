@@ -17,10 +17,8 @@
     <title>Sign Up</title>
   </head>
   <body>
-
     <!-- Event details -->
     <main class="details-box">
-
       <!-- Hero section -->
       <section class="image-section flex align-items-center justify-center">
         <div class="overlay"></div>
@@ -33,11 +31,12 @@
         </div>
       </section>
 
-      <!-- Text section -->
-      <section class="text-section">
-
+      <!-- Map section -->
+      <section class="map-section">
         <!-- Event Location -->
-        <div class="gallery-form flex justify-space-between align-items-center wrap">
+        <div
+          class="gallery-form flex justify-space-between align-items-center wrap"
+        >
           <div class="gallery">
             <div class="gallery-img">
               <h3>Event Details</h3>
@@ -142,32 +141,34 @@
               </div>
             </form>
           </div>
-        </div>
+          <!-- Event Map -->
+          <div class="map">
+            <picture>
+              <source
+                media="(max-width:799px)"
+                srcset="./assets/images/map-mobile.png"
+              />
+              <source
+                media="(min-width:800px)"
+                srcset="./assets/images/map.png"
+              />
+              <img src="./assets/images/map-mobile.png" alt="" />
+            </picture>
 
-        <!-- Event Map -->
-        <div class="map">
-          <picture>
-            <source
-              media="(max-width:799px)"
-              srcset="./assets/images/map-mobile.png"
-            />
-            <source
-              media="(min-width:800px)"
-              srcset="./assets/images/map.png"
-            />
-            <img src="./assets/images/map-mobile.png" alt="" />
-          </picture>
-
-          <div class="direction flex align-items-center">
-            <h4>How to get there?</h4>
-            <div class="map-way">
-              <img src="./assets/icons/car.svg" alt="Car Icon" />
-              <img src="./assets/icons/foot.svg" alt="man Icon" />
-              <img src="./assets/icons/bicycle.svg" alt="Bicycle Icon" />
+            <div class="direction flex align-items-center">
+              <h4>How to get there?</h4>
+              <div class="map-way">
+                <img src="./assets/icons/car.svg" alt="Car Icon" />
+                <img src="./assets/icons/foot.svg" alt="man Icon" />
+                <img src="./assets/icons/bicycle.svg" alt="Bicycle Icon" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- Text section -->
+      <section class="text-section">
         <!-- About the Event -->
         <div class="about">
           <h2 class="about-title">About this event</h2>
