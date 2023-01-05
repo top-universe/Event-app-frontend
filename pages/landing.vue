@@ -1,8 +1,6 @@
 <template>
     <main>
-      <div class="head">
         <Header />
-      </div>
         
 
     <!-- upper section start -->
@@ -196,17 +194,13 @@
 </script>
 
 <style scoped>
-@import url("../assets/app.css");
 
-.head {
-  margin: 19px 32px 80px;
-}
 /* upper section start */
 
 .section-one {
   /* width: 100vw; */
   text-align: center;
-  margin-bottom: 102px;
+  margin: 185px auto 102px;
 
   /* display: flex; */
 }

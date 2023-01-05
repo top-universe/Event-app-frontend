@@ -1,5 +1,6 @@
 <template>
     <div>
+      <Navigation/>
         <main class="main-container">
       <section class="header-section">
         <h1 class="main-text">Search Events</h1>
@@ -58,6 +59,7 @@
 
 .header-section {
   padding: 93px 0;
+  margin-top: 103px;
  
 }
 
@@ -124,6 +126,7 @@ color: rgba(60, 60, 67, 0.6);
     padding: 20px;
     gap: 30px;
     flex-direction: column;
+    margin-right: 50px;
 }
 
 .filter-header p {
@@ -223,10 +226,29 @@ color: rgba(60, 60, 67, 0.6);
   padding: 3px 10px;
 }
 
+@media screen and (max-width: 800px) {
+      .search-result {
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .filter-header {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+}
+
+
+  
+
 @media screen and (max-width: 600px) {
   
   .header-section {
-    margin: auto 5%;
+    margin: 103px 5% auto;
   }
 
     .search-result {

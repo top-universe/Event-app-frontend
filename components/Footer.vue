@@ -167,7 +167,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0px 20px 0 0;
   gap: 16px;
 }
 
@@ -223,10 +223,10 @@ footer {
   height: 24px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 
   footer {
-    padding: 50px 20px;
+    padding: 150px 5% 50px;
   }
   .company-and-links {
     flex-direction: column;

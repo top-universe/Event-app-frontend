@@ -1,8 +1,9 @@
 <template>
-  <main>
-    <!-- header component -->
-    <Header />
+  <div>
+       <!-- header component -->
+    <Navigation />
     <!-- header ends -->
+  <main>
 
     <!-- CTA > Call To Action -->
     <div class="hero">
@@ -138,10 +139,10 @@
         </div>
       </div>
     </div>
-
-    <!-- footer -->
-    <Footer />
   </main>
+      <!-- footer -->
+    <Footer />
+  </div>
 </template>
 
 
@@ -175,9 +176,17 @@
   text-align: center;
 }
 
+.navbar {
+  top: 0;
+}
+
 main {
   width: 100vw;
   padding: 0 100px;
+}
+
+.hero {
+  margin-top: 103px;
 }
 
 @media (max-width: 750px) {
@@ -329,68 +338,6 @@ ul.event-tag-list {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.card-container {
-  width: 229px;
-}
-
-.card-container img {
-  width: 100%;
-  height: 116px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.card-container h3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  margin: 10px 0;
-  color: #151515;
-}
-
-.event-description {
-  width: 100%;
-  height: 34px;
-  font-family: "Inter";
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 17px;
-  color: #535353;
-  margin-bottom: 10px;
-}
-
-.details {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.details div {
-  padding: 3px 10px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  border-radius: 100px;
-}
-
-.date {
-  color: #5eb35e;
-  background: rgba(148, 255, 148, 0.1);
-}
-
-.tag {
-  background: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  color: #151515;
 }
 
 .category {
@@ -554,19 +501,10 @@ ul.event-tag-list {
     padding-right: 5px;
   }
 
-  .event-card {
-    gap: 20;
-  }
-
-  .card-container {
-    width: 300px;
-  }
 }
 
 @media (max-width: 600px) {
-  .card-container {
-    width: 100%;
-  }
+ 
 
   .category-card img {
     width: 108px;
