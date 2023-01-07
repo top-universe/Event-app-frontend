@@ -138,7 +138,6 @@
 }
 
 .btn-signup {
-  background: #000000;
   color: #ffffff;
 }
 
@@ -167,7 +166,8 @@
   background: rgba(255, 255, 255, 0.95);
   height: 100vh;
   width: 100vw;
-  margin-top: 97px;
+  margin-top: 62px;
+  top: 0;
 }
 
 .mobile-nav-section {
@@ -175,7 +175,7 @@
   flex-direction: column;
   margin-left: 70px;
   list-style-type: none;
-  align-items: flex-end;
+  align-items: center;
   gap: 40px;
   margin-right: 50px;
   padding-top: 30px;
@@ -189,11 +189,16 @@
   color: var(--secondary-text-clr);
 }
 
+.mobile-nav-link-features:hover {
+  color: #18181b;
+}
+
 .mobile-nav-right {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  justify-content: space-evenly;
   gap: 10px;
+  margin-top: 40px;
 }
 }
 

@@ -241,7 +241,7 @@ a:hover {
   border-radius: 200px;
 }
 
-.search-event:focus {
+.search-event input:focus {
   outline: none;
 }
 
@@ -310,6 +310,7 @@ ul.event-tag-list {
   font-size: 14px;
   line-height: 14px;
   color: #0f0e0e;
+  cursor: pointer;
 }
 
 .tags.present {
