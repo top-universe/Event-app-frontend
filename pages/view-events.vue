@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
        <!-- header component -->
     <Navigation />
     <!-- header ends -->
@@ -151,7 +151,11 @@
 </script>
 
 <style scoped>
-/* utilities */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
 .big-text {
   font-size: 50px;
 }
@@ -172,13 +176,6 @@
 }
 /* ends of utility */
 
-.center {
-  text-align: center;
-}
-
-.navbar {
-  top: 0;
-}
 
 main {
   width: 100vw;

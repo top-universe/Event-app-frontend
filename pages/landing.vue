@@ -585,6 +585,37 @@ button {
 }
 /* Services Section ends */
 
+@media screen and (max-width: 650px) {
+
+  .section-one {
+    display: flex;
+    margin: auto 10%;
+  }
+  .section-one-header {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+.section-one-para {
+  font-size: 14px;
+}
+
+.section-one-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-one-button button {
+  width: 100%;
+}
+
+}
+
 
 
 </style>
