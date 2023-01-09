@@ -47,11 +47,14 @@
     <!-- middle section start  -->
 
     <div class="review-section">
-      <h2>Over 1000+ people trust us</h2>
-      <p>
-        Clarity gives you the Blocks & components you need to create a truly
-        professional website, landing page or admin panel for your SaaS
-      </p>
+      <div class="review-section-header">
+          <h2>Over 1000+ people trust us</h2>
+          <p>
+             Clarity gives you the Blocks & components you need to create a truly
+             professional website, landing page or admin panel for your SaaS
+          </p>
+      </div>
+      
       <ul class="reviews">
         <li class="review">
           <img
@@ -179,7 +182,7 @@
    <footer>
       <div class="line"></div>
       <div class="footer-down">
-        &#169 Copyright 2022, All Rights Reserved by Evently
+        &#169 Copyright 2023, All Rights Reserved by Evently
       </div>
     </footer> 
 
@@ -200,7 +203,7 @@
 .section-one {
   /* width: 100vw; */
   text-align: center;
-  margin: 185px auto 102px;
+  margin: 185px 10% 102px;
 
   /* display: flex; */
 }
@@ -219,12 +222,6 @@
   line-height: 62px;
   margin: 0 auto 36px;
   z-index: 1;
-}
-
-.section-one-header > span::before {
-  position: relative;
-  color: var(--primary-text-clr);
-  font-size: 52px;
 }
 
 .section-one-header > span::before {
@@ -258,9 +255,6 @@
   height: 56px;
 }
 
-.section-one-button-two {
-  background: none;
-}
 
 .play-icon.outline {
   margin-right: 10px;
@@ -274,9 +268,10 @@
   background-image: url("./assets/images/Group11.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 880px;
-  height: 526px;
+  max-width: 880px;
+  max-height: 526px;
   margin: 102px auto 88px;
+  aspect-ratio: 1.67 / 1;
 }
 
 .section-one-mp4::before {
@@ -405,7 +400,24 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.reviews::-webkit-scrollbar {
+  height: 10px;
+}
+
+.reviews::-webkit-scrollbar-track {
+  background: rgba(161, 161, 161, 0.1);
+}
+
+.reviews::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 2px solid rgb(47, 46, 46);
+}
+
+.reviews::-webkit-scrollbar-thumb:hover {
+  background: rgb(47, 46, 46);
 }
 
 /* review component start here */
@@ -414,9 +426,8 @@ button {
   position: relative;
   overflow: hidden;
   border-radius: 30px;
-  margin-bottom: 57px;
   height: 568px;
-  width: 316px;
+  min-width: 316px;
 }
 
 .review-top {
@@ -442,6 +453,9 @@ button {
   transform: scale(1.2);
 }
 
+.more-review {
+  margin-top: 57px;
+}
 .bottom-float {
   position: absolute;
   bottom: 0;
@@ -584,7 +598,87 @@ button {
   }
 }
 /* Services Section ends */
+@media screen and (max-width: 1150px) {
+  .reviews {
+    justify-content: left;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
 
+  .section-one {
+    margin: 98px 10% auto;
+  }
+
+  .review-section {
+    padding: 0;
+  }
+
+  .review-section-header {
+    padding: 10px 50px;
+  }
+ 
+  .review-section h2, .section-one-header {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 44px;
+  }
+  .section-one-header {
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+.section-one-para, .review-section p {
+  font-size: 14px;
+}
+
+.section-one-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-one-button button {
+  width: 100%;
+}
+
+.play-button {
+  width: 70px;
+  height: 70px;
+}
+
+.reviews {
+  overflow-x: scroll;
+  justify-content: left;
+  padding: 10px 25px;
+}
+
+.more-review {
+  margin-bottom: 40px;
+}
+
+.section-one-header > span::before {
+  width: 150.24px;
+  height: 20.82px;
+}
+
+.result {
+  border: none;
+}
+.footer-down {
+  font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+    .review-section h2, .section-one-header {
+   font-size: 30px;
+  }
+}
+  
 
 
 </style>

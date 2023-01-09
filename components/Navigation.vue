@@ -1,16 +1,28 @@
 <template>
+
+  <div>
+
+  
   <header>
     <div class="logo">
       <img src="../assets/icons/logo.svg" alt="logo" />
       <h1>Evently</h1>
     </div>
     <nav>
-      <a href="">
+      <a href="#" @click="menuClickOpen" v-show="open">
        <img
         src="../assets/icons/navMeun.svg"
         alt="menu-icon"
-        class="menu-icon"
-        @click="handleNavClick"    
+        class="menu-icon-open"
+                   
+      />
+      </a>
+      <a href="#" @click="menuClickClose" v-show="close">
+       <img
+        src="../assets/icons/Closecancel.svg"
+        alt="menu-icon"
+        class="menu-icon-close" 
+                    
       />
       </a>
 
@@ -27,7 +39,7 @@
       </ul>
     </nav>
   </header>
-
+         <!-- mobile navigation toggle -->
   <section v-show="navToggle" class="mobile-nav-toggle" >
       <ul class="nav-links-mobile">
         <a href="#"> <li class="link-mobile present">Create an Event</li> </a>
@@ -41,21 +53,31 @@
         </a>
       </ul>
   </section>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      navToggle: false
-    }
+      navToggle: false,
+      open: true,
+      close: false,
+    };
   },
   methods: {
-      handleNavClick() {
-      this.navToggle = !this.navToggle;
-    }
+      menuClickOpen() {
+      this.navToggle = true;
+      this.open = false;
+      this.close = true;
     },
-}
+       menuClickClose() {
+      this.navToggle = false;
+      this.open = true;
+      this.close = false;
+       }
+    },
+};
 
 </script>
 
@@ -116,7 +138,7 @@ li.nav-links img {
   color: var(--purple-color);
 }
 
-.menu-icon {
+.menu-icon-open, .menu-icon-close {
   display: none;
 }
 
@@ -128,7 +150,12 @@ nav {
   margin-right: 100px;
 }
 
-@media (max-width: 820px) {
+.mobile-nav-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
   ul.nav-links {
     gap: 20px;
   }
@@ -137,12 +164,11 @@ nav {
   margin-left: 5%;
 }
 
-.menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu-icon-open, .menu-icon-close {
     width: 22.5px;
+    display: flex;
 }
+
 
 nav {
   margin-right: 5%;
@@ -153,36 +179,39 @@ ul.nav-links {
   }
 }
 
-.mobile-nav-toggle{
-  display: flex;
+.mobile-nav-toggle {
+  display: block;
   position: fixed;
   z-index: 3;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   height: 100vh;
   width: 100vw;
   margin-top: 97px;
 }
 
-ul.nav-links-mobile {
+.nav-links-mobile {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 40px;
   margin-right: 50px;
+  padding-top: 30px;
 }
 
 .link-mobile {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 17px;
-  color: var(--primary-text-clr);
+  color: var(--secondary-text-clr);
 }
 
 .link-mobile:hover {
   color: var(--purple-color);
 }
+
+
 
 </style>

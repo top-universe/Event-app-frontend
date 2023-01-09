@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "vite": "^3.2.5"
   }
 }
