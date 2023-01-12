@@ -180,6 +180,7 @@ body {
     .signup-main {
         position: absolute;
         width: 380px;
+        max-width: 85%;
         top: 55vh;
         z-index: 9;
     }

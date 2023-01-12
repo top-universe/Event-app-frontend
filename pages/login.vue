@@ -147,35 +147,36 @@ body {
 }
 
 @media (max-width: 560px) {
-  .header {
-    display: none;
+    .signup-container {
+        height: 100%;
+    }
+    .header {
+      display: none;
+    }
+    .header-title.mobile {
+      display: block;
+      text-align: left;
+      margin-bottom: 24px;
+      color: #151515;
+    }
+    .signup-main {
+      position: absolute;
+      width: 380px;
+      max-width: 85%;
+      top: 55vh;
+      z-index: 9;
+    }
+    .pic-side {
+      background: url(./assets/images/sign-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 60vh;
+      position: relative;
+    }
+    .content-side {
+      display: none;
+    }
   }
-  .header-title.mobile {
-    display: block;
-    text-align: left;
-    margin-bottom: 24px;
-    color: #151515;
-  }
-  .signup-main {
-    position: absolute;
-    width: 380px;
-    top: 55vh;
-    z-index: 9;
-  }
-  .pic-side {
-    background: url(./assets/images/sign-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 60vh;
-    position: relative;
-  }
-  .content-side {
-    display: block;
-    /* width: 100%; */
-    height: 40vh;
-    background: var(--white-clr);
-  }
-}
 
 </style>
