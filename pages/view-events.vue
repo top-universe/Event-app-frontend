@@ -1,161 +1,197 @@
 <template>
   <div class="container">
-       <!-- header component -->
+    <!-- header component -->
     <Navigation />
     <!-- header ends -->
-  <main>
+    <main>
 
-    <!-- CTA > Call To Action -->
-    <div class="hero">
-      <h1>Turn your visitors into profitable business</h1>
-      <div class="search-event">
-        <input type="text" name="search" placeholder="Search Events" />
-        <button>
-          <img src="@/assets/images/magnifyingglass.svg" alt="" />
-        </button>
-      </div>
-    </div>
-
-    <!-- Events -->
-    <div class="events">
-      <div class="filter-by-location">
-        Popular in <span class="location">Lagos</span>
-        <span>
-          <img src="@/assets/images/dropdown-arrow.svg" alt="select" />
-        </span>
+      <!-- CTA > Call To Action -->
+      <div class="hero">
+        <h1>Turn your visitors into profitable business</h1>
+        <div class="search-event">
+          <input type="text" name="search" placeholder="Search Events" />
+          <button>
+            <img src="@/assets/images/magnifyingglass.svg" alt="" />
+          </button>
+        </div>
       </div>
 
-      <ul class="event-tag-list">
-        <li class="tags present">All</li>
-        <li class="tags">For you</li>
-        <li class="tags">Online</li>
-        <li class="tags">Today</li>
-        <li class="tags mb-none">This weekend</li>
-        <li class="tags mb-none">Free</li>
-        <li class="tags mb-none">Music</li>
-        <li class="tags mb-none">Food & Drink</li>
-        <li class="tags mb-none">Charity & Causes</li>
-        <li class="tags dt-none">More</li>
-      </ul>
+      <!-- Events -->
+      <div class="events">
+        <div class="filter-by-location">
+          Popular in <span class="location">Lagos</span>
+          <span>
+            <img src="@/assets/images/dropdown-arrow.svg" alt="select" />
+          </span>
+        </div>
 
-      <!-- Category-mobile -->
-      <div class="event-by dt-none">
-        <h2>Categories</h2>
-        <ul class="event-cards category">
-          <li class="category-card">
-            <img src="@/assets/images/sport.png" alt="sport" />
-            <h3 class="category-title">Sport</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/fitness.png" alt="sport" />
-            <h3 class="category-title">fitness</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/music.png" alt="sport" />
-            <h3 class="category-title">Music</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/fashion.png" alt="sport" />
-            <h3 class="category-title">Fashion</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/technology.png" alt="sport" />
-            <h3 class="category-title">Technology</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/arts.png" alt="sport" />
-            <h3 class="category-title">Arts</h3>
-          </li>
+        <ul class="event-tag-list">
+          <li class="tags present">All</li>
+          <li class="tags">For you</li>
+          <li class="tags">Online</li>
+          <li class="tags">Today</li>
+          <li class="tags mb-none">This weekend</li>
+          <li class="tags mb-none">Free</li>
+          <li class="tags mb-none">Music</li>
+          <li class="tags mb-none">Food & Drink</li>
+          <li class="tags mb-none">Charity & Causes</li>
+          <li class="tags dt-none">More</li>
         </ul>
-      </div>
 
-      <!-- based on interest -->
-      <div class="event-by">
-        <h2>Based on you interest</h2>
-        <ul class="event-cards">
-          <CardResult/>
-        </ul>
-      </div>
+        <!-- Category-mobile -->
+        <div class="event-by dt-none">
+          <h2>Categories</h2>
+          <ul class="event-cards category">
+            <li class="category-card">
+              <img src="@/assets/images/sport.png" alt="sport" />
+              <h3 class="category-title">Sport</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/fitness.png" alt="sport" />
+              <h3 class="category-title">fitness</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/music.png" alt="sport" />
+              <h3 class="category-title">Music</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/fashion.png" alt="sport" />
+              <h3 class="category-title">Fashion</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/technology.png" alt="sport" />
+              <h3 class="category-title">Technology</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/arts.png" alt="sport" />
+              <h3 class="category-title">Arts</h3>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Category -->
-      <div class="event-by mb-none">
-        <h2>Categories</h2>
-        <ul class="event-cards category">
-          <li class="category-card">
-            <img src="@/assets/images/sport.png" alt="sport" />
-            <h3 class="category-title">Sport</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/fitness.png" alt="sport" />
-            <h3 class="category-title">fitness</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/music.png" alt="sport" />
-            <h3 class="category-title">Music</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/fashion.png" alt="sport" />
-            <h3 class="category-title">Fashion</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/technology.png" alt="sport" />
-            <h3 class="category-title">Technology</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/arts.png" alt="sport" />
-            <h3 class="category-title">Arts</h3>
-          </li>
-          <li class="category-card">
-            <img src="@/assets/images/food.png" alt="sport" />
-            <h3 class="category-title">Food</h3>
-          </li>
-        </ul>
-      </div>
+        <!-- based on interest -->
+        <div class="event-by">
+          <h2>Based on you interest</h2>
+          <ul class="event-cards">
+            <EventCard v-for="(i, index) in events" :key="index" :image="i.image" :title="i.title"
+              :short_description="i.short_description" :date="i.date" :tag="i.tag" />
+          </ul>
+        </div>
 
-      <!-- recommendation -->
-      <div class="event-by mb-none">
-        <h2>Best recommendation</h2>
-        <ul class="event-cards">
-          <CardResult/>
-        </ul>
-      </div>
+        <!-- Category -->
+        <div class="event-by mb-none">
+          <h2>Categories</h2>
+          <ul class="event-cards category">
+            <li class="category-card">
+              <img src="@/assets/images/sport.png" alt="sport" />
+              <h3 class="category-title">Sport</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/fitness.png" alt="sport" />
+              <h3 class="category-title">fitness</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/music.png" alt="sport" />
+              <h3 class="category-title">Music</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/fashion.png" alt="sport" />
+              <h3 class="category-title">Fashion</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/technology.png" alt="sport" />
+              <h3 class="category-title">Technology</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/arts.png" alt="sport" />
+              <h3 class="category-title">Arts</h3>
+            </li>
+            <li class="category-card">
+              <img src="@/assets/images/food.png" alt="sport" />
+              <h3 class="category-title">Food</h3>
+            </li>
+          </ul>
+        </div>
 
-      <div class="promote mb-none">
-        <div class="product-advert">
-          <div class="advert-text">
-            <h2 class="advert-title">
-              Turn your visitors into profitable business events
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
-              vel libero
-            </p>
+        <!-- recommendation -->
+        <div class="event-by mb-none">
+          <h2>Best recommendation</h2>
+          <ul class="event-cards">
+            <CardResult />
+          </ul>
+        </div>
+
+        <div class="promote mb-none">
+          <div class="product-advert">
+            <div class="advert-text">
+              <h2 class="advert-title">
+                Turn your visitors into profitable business events
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Mattis scelerisque aliquet
+                vel libero
+              </p>
+            </div>
+          </div>
+          <div class="get-action">
+            <h2>Tell us what you love to see</h2>
+            <p>We’ll find event recommendations just for you</p>
+            <button class="outline-btn outline-white">Get Started</button>
           </div>
         </div>
-        <div class="get-action">
-          <h2>Tell us what you love to see</h2>
-          <p>We’ll find event recommendations just for you</p>
-          <button class="outline-btn outline-white">Get Started</button>
-        </div>
       </div>
-    </div>
-  </main>
-      <!-- footer -->
+    </main>
+    <!-- footer -->
     <Footer />
   </div>
 </template>
 
 
 <script>
+import EventCard from '~~/components/EventCard.vue';
+
+import axios from "axios"
+
+export default {
+  data() {
+    return {
+      events: []
+    }
+  },
+  methods: {
+    getEvents() {
+      var config = {
+        method: 'get',
+        url: 'http://localhost:3001/events',
+        headers: {}
+      };
+
+      const self = this
+
+      axios(config)
+        .then(function (response) {
+          console.log(JSON.stringify(response.data));
+          self.events = response.data
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+    }
+  },
+  mounted() {
+    this.getEvents()
+  }
+}
 
 </script>
 
 <style scoped>
-
 .container {
   display: flex;
   flex-direction: column;
 }
+
 .big-text {
   font-size: 50px;
 }
@@ -174,6 +210,7 @@
   text-align: center;
   color: var(--primary-text-clr);
 }
+
 /* ends of utility */
 
 
@@ -330,13 +367,13 @@ ul.event-tag-list {
 
 .event-cards {
   width: 100%;
-  gap: 40px;
-  display: flex;
+  gap: 20px;
+  display: grid;
   list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
 }
+
 
 .category {
   gap: 22px;
@@ -360,11 +397,9 @@ ul.event-tag-list {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    179.66deg,
-    rgba(0, 0, 0, 0) 61.45%,
-    rgba(0, 0, 0, 0.8) 123.7%
-  );
+  background: linear-gradient(179.66deg,
+      rgba(0, 0, 0, 0) 61.45%,
+      rgba(0, 0, 0, 0.8) 123.7%);
   border-radius: 10px;
   padding: 8.5px 10px;
   display: flex;
@@ -502,7 +537,7 @@ ul.event-tag-list {
 }
 
 @media (max-width: 600px) {
- 
+
 
   .category-card img {
     width: 108px;
