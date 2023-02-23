@@ -1,5 +1,5 @@
 
-import { defuFn } from '/Users/brain/Desktop/open source/evently/frontend/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

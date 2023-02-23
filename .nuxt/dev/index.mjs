@@ -1,16 +1,25 @@
-import 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/scule/dist/index.mjs';
-import { hash } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/ohash/dist/index.mjs';
-import { parseURL, withQuery, joinURL } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/brain/Desktop/open%20source/evently/frontend/node_modules/radix3/dist/index.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
+import { Server } from 'http';
+import { tmpdir } from 'os';
+import { join } from 'path';
+import { mkdirSync } from 'fs';
+import { parentPort, threadId } from 'worker_threads';
+import { provider, isWindows } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/std-env/dist/index.mjs';
+import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withQuery, joinURL } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/ufo/dist/index.mjs';
+import destr from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/ohash/dist/index.mjs';
+import { createStorage } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/unstorage/dist/drivers/fs.mjs';
+import defu from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/radix3/dist/index.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{}};
 const ENV_PREFIX = "NITRO_";
@@ -69,7 +78,7 @@ const timingMiddleware = eventHandler((event) => {
   }.bind(event.res);
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/brain/Desktop/open source/evently/frontend/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/server/assets"}];
 
 const assets = createStorage();
 
@@ -83,10 +92,42 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/brain/Desktop/open source/evently/frontend","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/brain/Desktop/open source/evently/frontend/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/brain/Desktop/open source/evently/frontend/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/brain/Desktop/open source/evently/frontend/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\HP\\OneDrive\\Documents\\Top_universe\\Event-app-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\HP\\OneDrive\\Documents\\Top_universe\\Event-app-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\HP\\OneDrive\\Documents\\Top_universe\\Event-app-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\HP\\OneDrive\\Documents\\Top_universe\\Event-app-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+
+function defineRenderHandler(handler) {
+  return eventHandler(async (event) => {
+    if (event.req.url.endsWith("/favicon.ico")) {
+      event.res.setHeader("Content-Type", "image/x-icon");
+      event.res.end("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+      return;
+    }
+    const response = await handler(event);
+    if (!response) {
+      if (!event.res.writableEnded) {
+        event.res.statusCode = event.res.statusCode === 200 ? 500 : event.res.statusCode;
+        event.res.end("No response returned from render handler: " + event.req.url);
+      }
+      return;
+    }
+    const nitroApp = useNitroApp();
+    await nitroApp.hooks.callHook("render:response", response, { event });
+    if (!event.res.headersSent && response.headers) {
+      for (const header in response.headers) {
+        event.res.setHeader(header, response.headers[header]);
+      }
+      if (response.statusCode) {
+        event.res.statusCode = response.statusCode;
+      }
+      if (response.statusMessage) {
+        event.res.statusMessage = response.statusMessage;
+      }
+    }
+    return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
+  });
+}
 
 const config = useRuntimeConfig();
 const _routeRulesMatcher = toRouteMatcher(createRouter({ routes: config.nitro.routeRules }));
@@ -365,7 +406,7 @@ const errorHandler = (async function errorhandler(error, event) {
     statusCode,
     statusMessage,
     message,
-    stack: "",
+    stack: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
     data: error.data
   };
   event.node.res.statusCode = errorObject.statusCode !== 200 && errorObject.statusCode || 500;
@@ -393,7 +434,10 @@ const errorHandler = (async function errorhandler(error, event) {
     redirect: "manual"
   }).catch(() => null) : null;
   if (!res) {
-    const { template } = await import('../error-500.mjs');
+    const { template } = await import('file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
+    {
+      errorObject.description = errorObject.message;
+    }
     event.node.res.setHeader("Content-Type", "text/html;charset=UTF-8");
     event.node.res.end(template(errorObject));
     return;
@@ -410,17 +454,18 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_6Y1cgx = () => import('../renderer.mjs');
+const _lazy_itka5W = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/**', handler: _lazy_6Y1cgx, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_itka5W, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_itka5W, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
   const config = useRuntimeConfig();
   const hooks = createHooks();
   const h3App = createApp({
-    debug: destr(false),
+    debug: destr(true),
     onError: errorHandler
   });
   h3App.use(config.app.baseURL, timingMiddleware);
@@ -462,11 +507,232 @@ function createNitroApp() {
 const nitroApp = createNitroApp();
 const useNitroApp = () => nitroApp;
 
-const localFetch = nitroApp.localFetch;
+const server = new Server(toNodeListener(nitroApp.h3App));
+function getAddress() {
+  if (provider === "stackblitz" || process.env.NITRO_NO_UNIX_SOCKET) {
+    return "0";
+  }
+  const socketName = `worker-${process.pid}-${threadId}.sock`;
+  if (isWindows) {
+    return join("\\\\.\\pipe\\nitro", socketName);
+  } else {
+    const socketDir = join(tmpdir(), "nitro");
+    mkdirSync(socketDir, { recursive: true });
+    return join(socketDir, socketName);
+  }
+}
+const listenAddress = getAddress();
+server.listen(listenAddress, () => {
+  const _address = server.address();
+  parentPort.postMessage({
+    event: "listen",
+    address: typeof _address === "string" ? { socketPath: _address } : { host: "localhost", port: _address.port }
+  });
+});
 {
-  process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection] " + err));
-  process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException] " + err));
+  process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection]", err));
+  process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
 }
 
-export { useRuntimeConfig as a, getRouteRules as g, localFetch as l, useNitroApp as u };
-//# sourceMappingURL=nitro-prerenderer.mjs.map
+const appRootId = "__nuxt";
+
+const appRootTag = "div";
+
+function buildAssetsURL(...path) {
+  return joinURL(publicAssetsURL(), useRuntimeConfig().app.buildAssetsDir, ...path);
+}
+function publicAssetsURL(...path) {
+  const publicBase = useRuntimeConfig().app.cdnURL || useRuntimeConfig().app.baseURL;
+  return path.length ? joinURL(publicBase, ...path) : publicBase;
+}
+
+globalThis.__buildAssetsURL = buildAssetsURL;
+globalThis.__publicAssetsURL = publicAssetsURL;
+const getClientManifest = () => import('file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
+const getServerEntry = () => import('file://C:/Users/HP/OneDrive/Documents/Top_universe/Event-app-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getSSRRenderer = lazyCachedFunction(async () => {
+  const manifest = await getClientManifest();
+  if (!manifest) {
+    throw new Error("client.manifest is not available");
+  }
+  const createSSRApp = await getServerEntry();
+  if (!createSSRApp) {
+    throw new Error("Server bundle is not available");
+  }
+  const options = {
+    manifest,
+    renderToString: renderToString$1,
+    buildAssetsURL
+  };
+  const renderer = createRenderer(createSSRApp, options);
+  async function renderToString$1(input, context) {
+    const html = await renderToString(input, context);
+    if (process.env.NUXT_VITE_NODE_OPTIONS) {
+      renderer.rendererContext.updateManifest(await getClientManifest());
+    }
+    return `<${appRootTag} id="${appRootId}">${html}</${appRootTag}>`;
+  }
+  return renderer;
+});
+const getSPARenderer = lazyCachedFunction(async () => {
+  const manifest = await getClientManifest();
+  const options = {
+    manifest,
+    renderToString: () => `<${appRootTag} id="${appRootId}"></${appRootTag}>`,
+    buildAssetsURL
+  };
+  const renderer = createRenderer(() => () => {
+  }, options);
+  const result = await renderer.renderToString({});
+  const renderToString = (ssrContext) => {
+    const config = useRuntimeConfig();
+    ssrContext.payload = {
+      serverRendered: false,
+      config: {
+        public: config.public,
+        app: config.app
+      },
+      data: {},
+      state: {}
+    };
+    ssrContext.renderMeta = ssrContext.renderMeta ?? getStaticRenderedHead;
+    return Promise.resolve(result);
+  };
+  return {
+    rendererContext: renderer.rendererContext,
+    renderToString
+  };
+});
+const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.js(\?.*)?$/;
+const renderer = defineRenderHandler(async (event) => {
+  const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery(event) : null;
+  if (ssrError && event.node.req.socket.readyState !== "readOnly") {
+    throw createError("Cannot directly render error page!");
+  }
+  let url = ssrError?.url || event.node.req.url;
+  const isRenderingPayload = PAYLOAD_URL_RE.test(url);
+  if (isRenderingPayload) {
+    url = url.substring(0, url.lastIndexOf("/")) || "/";
+    event.node.req.url = url;
+  }
+  const routeOptions = getRouteRules(event);
+  const ssrContext = {
+    url,
+    event,
+    runtimeConfig: useRuntimeConfig(),
+    noSSR: !!event.node.req.headers["x-nuxt-no-ssr"] || routeOptions.ssr === false || (false),
+    error: !!ssrError,
+    nuxt: void 0,
+    payload: ssrError ? { error: ssrError } : {}
+  };
+  const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
+  const _rendered = await renderer.renderToString(ssrContext).catch((error) => {
+    throw !ssrError && ssrContext.payload?.error || error;
+  });
+  await ssrContext.nuxt?.hooks.callHook("app:rendered", { ssrContext });
+  if (ssrContext.payload?.error && !ssrError) {
+    throw ssrContext.payload.error;
+  }
+  if (isRenderingPayload) {
+    const response2 = renderPayloadResponse(ssrContext);
+    return response2;
+  }
+  const renderedMeta = await ssrContext.renderMeta?.() ?? {};
+  const inlinedStyles = "";
+  const htmlContext = {
+    htmlAttrs: normalizeChunks([renderedMeta.htmlAttrs]),
+    head: normalizeChunks([
+      renderedMeta.headTags,
+      null,
+      _rendered.renderResourceHints(),
+      _rendered.renderStyles(),
+      inlinedStyles,
+      ssrContext.styles
+    ]),
+    bodyAttrs: normalizeChunks([renderedMeta.bodyAttrs]),
+    bodyPrepend: normalizeChunks([
+      renderedMeta.bodyScriptsPrepend,
+      ssrContext.teleports?.body
+    ]),
+    body: [
+      _rendered.html
+    ],
+    bodyAppend: normalizeChunks([
+      `<script>window.__NUXT__=${devalue(ssrContext.payload)}<\/script>`,
+      _rendered.renderScripts(),
+      renderedMeta.bodyScripts
+    ])
+  };
+  const nitroApp = useNitroApp();
+  await nitroApp.hooks.callHook("render:html", htmlContext, { event });
+  const response = {
+    body: renderHTMLDocument(htmlContext),
+    statusCode: event.node.res.statusCode,
+    statusMessage: event.node.res.statusMessage,
+    headers: {
+      "Content-Type": "text/html;charset=UTF-8",
+      "X-Powered-By": "Nuxt"
+    }
+  };
+  return response;
+});
+function lazyCachedFunction(fn) {
+  let res = null;
+  return () => {
+    if (res === null) {
+      res = fn().catch((err) => {
+        res = null;
+        throw err;
+      });
+    }
+    return res;
+  };
+}
+function normalizeChunks(chunks) {
+  return chunks.filter(Boolean).map((i) => i.trim());
+}
+function joinTags(tags) {
+  return tags.join("");
+}
+function joinAttrs(chunks) {
+  return chunks.join(" ");
+}
+function renderHTMLDocument(html) {
+  return `<!DOCTYPE html>
+<html ${joinAttrs(html.htmlAttrs)}>
+<head>${joinTags(html.head)}</head>
+<body ${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body>
+</html>`;
+}
+function renderPayloadResponse(ssrContext) {
+  return {
+    body: `export default ${devalue(splitPayload(ssrContext).payload)}`,
+    statusCode: ssrContext.event.node.res.statusCode,
+    statusMessage: ssrContext.event.node.res.statusMessage,
+    headers: {
+      "content-type": "text/javascript;charset=UTF-8",
+      "x-powered-by": "Nuxt"
+    }
+  };
+}
+function splitPayload(ssrContext) {
+  const { data, prerenderedAt, ...initial } = ssrContext.payload;
+  return {
+    initial: { ...initial, prerenderedAt },
+    payload: { data, prerenderedAt }
+  };
+}
+
+const renderer$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': renderer
+});
+
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+
+const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': _virtual__headStatic
+});
+//# sourceMappingURL=index.mjs.map

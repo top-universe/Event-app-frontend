@@ -129,17 +129,7 @@
           </div>
           <!-- Event Map -->
           <div class="map">
-            <picture>
-              <source
-                media="(max-width:799px)"
-                srcset="../assets/images/map-mobile.png"
-              />
-              <source
-                media="(min-width:800px)"
-                srcset="../assets/images/map.png"
-              />
-              <img src="../assets/images/map-mobile.png" alt="" />
-            </picture>
+            <iframe :src="mapLink" style="border:0; width: 100%; height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <div class="direction flex align-items-center">
               <h4>How to get there?</h4>
@@ -226,10 +216,10 @@
           <div class="social">
             <h4>Share with Friends</h4>
             <div class="socials flex">
-              <img src="../assets/icons/twitter.svg" alt="Twitter Icon" />
-              <img src="../assets/icons/facebook.svg" alt="Facebook Icon" />
-              <img src="../assets/icons/linkedin.svg" alt="Linkedin Icon" />
-              <img src="../assets/icons/dribbble.svg" alt="Dribbble Icon" />
+              <a href="#"><img src="../assets/icons/twitter.svg" alt="Twitter Icon" class="icon" /></a>
+              <a href="#"><img src="../assets/icons/facebook.svg" alt="Facebook Icon" class="icon"/></a>
+              <a href="#"><img src="../assets/icons/linkedin.svg" alt="Linkedin Icon" class="icon"/></a>
+              <a href="#"><img src="../assets/icons/dribbble.svg" alt="Dribbble Icon" class="icon"/></a>
             </div>
           </div>
         </div>
@@ -242,7 +232,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      mapLink:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15857.626581269507!2d7.470594399999999!3d6.47006275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a253c5b97cd9%3A0x84de15d444ec805d!2sUgbo-Odogwu%20Market!5e0!3m2!1sen!2sng!4v1677013919138!5m2!1sen!2sng"
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -429,6 +425,7 @@ export default {};
 /* map */
 .map {
   margin-top: 50px;
+  flex-basis: 100%;
 }
 .direction {
   margin: 52.4px 0;
@@ -442,9 +439,6 @@ export default {};
 }
 .map-way img {
   margin-right: 30px;
-}
-.map picture {
-  width: 100%;
 }
 
 /* About */
@@ -535,6 +529,13 @@ export default {};
 }
 .socials img {
   margin-right: 24px;
+}
+
+.icon {
+  transition: transform 0.s;
+}
+.icon:hover {
+  transform: scale(1.3);
 }
 @media (max-width: 769px) {
   .form-box {
